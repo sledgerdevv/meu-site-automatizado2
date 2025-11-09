@@ -1,3 +1,10 @@
+const conteudoPosts = document.getElementById('conteudo-posts');
+
+posts.forEach(post => {
+    const div = document.createElement('div');
+    div.innerHTML = `<h3>${post.title}</h3><p>${post.content}</p>`;
+    conteudoPosts.appendChild(div);
+});
 // Mostrar posts automaticamente
 const conteudoPosts = document.getElementById('conteudo-posts');
 
@@ -21,3 +28,4 @@ form.addEventListener('submit', (e) => {
     resposta.textContent = `Obrigado, ${nome}! Sua mensagem foi recebida.`;
     form.reset();
 });
+
